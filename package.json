@@ -1,7 +1,7 @@
 {
   "name": "project-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "So if you add these npm packages it should work, on npm start.  Will continue to add routes and models.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,5 +27,6 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.13"
-  }
+  },
+  "devDependencies": {}
 }
