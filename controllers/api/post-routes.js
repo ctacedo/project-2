@@ -4,7 +4,7 @@ const { Post, User } = require('../../models');
 // get all users
 router.get('/', (req, res) => {
     Post.findAll({
-      attributes: ['id', 'title', 'created_at'],
+      attributes: ['id', 'title', 'body_text', 'created_at'],
       order: [['created_at', 'DESC']], 
       include: [
         {
@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
       where: {
         id: req.params.id
       },
-      attributes: ['id', 'title', 'created_at'],
+      attributes: ['id', 'title', 'body_text', 'created_at'],
       include: [
         {
           model: User,
@@ -47,10 +47,11 @@ router.get('/', (req, res) => {
   });
 
   router.post('/', (req, res) => {
-    // expects {title: 'Taskmaster goes public!', user_id: 1}
+    // expects {title: 'AC nightmare', user_id: 1, body_text: comments}
     Post.create({
       title: req.body.title,
-      user_id: req.body.user_id
+      user_id: req.body.user_id,
+      body_text: req.body.body_text
     })
       .then(dbPostData => res.json(dbPostData))
       .catch(err => {
