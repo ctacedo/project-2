@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 const { Post, User } = require('../models');
 
 router.get('/', (req, res) => {
+    console.log(req.session);
     Post.findAll({
         attributes: ['id', 'title', 'body_text', 'created_at'],
         order: [['created_at', 'DESC']], 
@@ -26,6 +27,11 @@ router.get('/', (req, res) => {
   });
 
   router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+  
     res.render('login');
   });
 
