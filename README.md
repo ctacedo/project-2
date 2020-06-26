@@ -17,18 +17,3 @@ express-handlebars
 npm i express-session connect-session-sequelize
 
 Let me know if you guys can't push anything
-
-
-For Posts:
-{
-  "title": "Lost my dog",
-	"user_id": "1",
-	"body_text": "Omg I lost my dog, please help!!!, $1,000,000 reward"
-	
-}
-
-User:
-
-    "username": "ctacedo",
-	"email": "ctacedo@gmail.com",
-	"password": "password1234
