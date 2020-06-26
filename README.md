@@ -1,19 +1,16 @@
-# project-2
+#  3__ Fulton Street's Community Board
+## UCBExt Project 2
 
-So if you add these npm packages it should work, on npm start.  Will continue to add routes and models. 
+An apartment’s bulletin board for tenants to log into, communicate with each other, and see any building notifications.  
 
-express
+## Concept:
+A community page for tenants to share.  We believe a community bulletin board could use all the recent technologies we’ve been learning. 
 
-sequelize 
+## User Story:
+As a tenant I want a local, community page I can log into to talk with neighbors and know any building updates. 
 
-mysql2
 
-dotenv
-
-bcrypt
-
-express-handlebars
-
-npm i express-session connect-session-sequelize
-
-Let me know if you guys can't push anything
+## Technologies Used:
+    - Express.js            - Node.js       - Heroku         - Handlebars.js
+    - Sequelize             - MySQL         - Sequelize      - Dotenv
+    - Express-handlebars    -Express-session
