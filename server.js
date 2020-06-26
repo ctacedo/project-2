@@ -32,6 +32,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+// should allow me to use an image on the page
+app.use(express.static('images'));
+
+
+
 // turn on routes
 app.use(routes);
 
