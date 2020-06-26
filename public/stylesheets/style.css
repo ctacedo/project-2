@@ -6,7 +6,8 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
     color: #333;
   }
   
@@ -80,6 +81,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    font-size: 22px;
+    background-color: #C1C1C1; 
+    text-shadow: 0.5px 0.5px 0.5px rgb(0, 0, 255);
   }
   
   header h1 {
@@ -123,9 +127,8 @@
   }
   
   .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
+    font-size: 100%;
+    color: black;
   }
   
   .edit-link {
@@ -175,4 +178,16 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: #C1C1C1;
+    font-size: 16px;
+  }
+
+  b {
+    font-size: larger;
+  }
+
+  div.meta {
+    font-style: italic;
+    font-size: 80%;
+    color: darkgrey;
   }
