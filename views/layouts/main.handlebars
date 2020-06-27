@@ -17,10 +17,11 @@
       <h1>
         <a href="/">388 Fulton Street's Community board</a>
       </h1>
-      <nav>
-         <a href="/login">login</a>
-         <button id="logout" class="btn-no-style">logout</button>
-      </nav>
+       {{#if loggedIn}}
+        <button id="logout" class="btn-no-style">logout</button>
+     {{else}}
+        <a href="/login">login</a>
+      {{/if}}
     </header>
     <main>
       <div>
@@ -47,7 +48,9 @@
         </i></p>
     </footer>
   </div>
-  <script src="/javascript/logout.js"></script>
+{{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+{{/if}}
 </body>
 
 </html>
