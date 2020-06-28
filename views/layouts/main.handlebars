@@ -10,18 +10,18 @@
 
 <body>
 
-  {{!-- <img src="background.jpg" style="width:auto;height:auto "> --}}
+  <img src="./images/background.jpg" style="width:auto;height:auto ">
 
   <div class="wrapper">
     <header>
       <h1>
         <a href="/">388 Fulton Street's Community board</a>
       </h1>
-       {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">logout</button>
-     {{else}}
-        <a href="/login">login</a>
-        <a href="/signup">sign-up</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style">logout</button>
+      {{else}}
+      <a href="/login">login</a>
+      <a href="/signup">sign-up</a>
       {{/if}}
     </header>
     <main>
@@ -51,9 +51,9 @@
         </i></p>
     </footer>
   </div>
-{{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
-{{/if}}
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
 </body>
 
 </html>
