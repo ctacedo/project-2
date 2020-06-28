@@ -3,8 +3,8 @@
   <li>
     <article class="post">
       <div class="title">
-        <a target="_blank">{{title}}</a>
-        <span>({{body_text}})</span>
+        <a>{{title}}:</a>
+        <span>{{body_text}}</span>
       </div>
       <div class="meta">
           {{user.username}} on {{created_at}}
@@ -14,6 +14,8 @@
   {{/each}}
 </ol>
 
+
+{{#if loggedIn}}
 <section>
   <h2>Create New Post</h2>
 
@@ -29,5 +31,6 @@
     <button type="submit" class="btn">Create</button>
   </form>
 </section>
+{{/if}}
 
-<script src="/javascript/postings.js"></script>
+<script src="/javascript/posting.js"></script>
