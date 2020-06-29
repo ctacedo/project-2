@@ -3,6 +3,8 @@
 
 An apartment’s bulletin board for tenants to log into, communicate with each other, and see any building notifications.  
 
+Deployed Application: https://afternoon-cove-63197.herokuapp.com/
+
 ## Concept:
 A community page for tenants to share.  We believe a community bulletin board could use all the recent technologies we’ve been learning. 
 
