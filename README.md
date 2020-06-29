@@ -19,8 +19,4 @@ As a tenant I want a local, community page I can log into to talk with neighbors
 
 <img src="imagesForReadMe//main.png" width="600">
 
-<img src="imagesForReadMe//signup.png" width="600">
-
-<img src="imagesForReadMe//login.png" width="600">
-
-<img src="imagesForReadMe//createpost.png" width="600">
+<img src="imagesForReadMe//signup.png" width="300"><img src="imagesForReadMe//login.png" width="300"><img src="imagesForReadMe//createpost.png" width="300">
