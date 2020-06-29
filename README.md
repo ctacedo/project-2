@@ -16,3 +16,5 @@ As a tenant I want a local, community page I can log into to talk with neighbors
     - Express.js            - Node.js       - Heroku         - Handlebars.js
     - Sequelize             - MySQL         - Sequelize      - Dotenv
     - Express-handlebars    -Express-session
+
+<img src="imagesForReadMe//main.png" width="300">
